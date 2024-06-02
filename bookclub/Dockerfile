@@ -13,4 +13,4 @@ FROM openjdk:19
 COPY --from=build /target/bookclub.jar bookclub.jar
 #ENV PORT=8080
 EXPOSE 8080
-ENTRYPOINT["java", "-jar", "bookclub.jar"]
+ENTRYPOINT ["java", "-jar", "bookclub.jar"]
