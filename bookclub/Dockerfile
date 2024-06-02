@@ -4,7 +4,7 @@
 
 # FROM maven:3.9.0-eclipse-temurin-17-alphin AS build
 FROM maven:3.9.0-eclipse-temurin-19 AS build
-WORKDIR /app
+WORKDIR /bookclub
 COPY . .
 RUN mvn clean package -DskipTests
 
